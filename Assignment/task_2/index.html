@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<style>
+    .redstr {
+        color: red;
+    }
+
+    select {
+        width: 340px;
+    }
+
+    * {
+        font-family: Helvetica, sans-serif;
+    }
+
+    .retype {
+        width: 340px;
+    }
+
+    .status {
+        background-color: rgb(255, 0, 0);
+        color: yellow;
+    }
+
+    #hst {
+        width: 720px;
+    }
+
+    .abc {
+        width: 720px;
+    }
+    
+</style>
+
+<body>
+    <form action="">
+        <table align="center" cellpadding="5">
+            <tr>
+                <td align="left">
+                    <span class="redstr">*</span <label for="">CNIC / Form-B No. (XXXXX-XXXXXXX-X):
+                    </label>
+                </td>
+                <td align="left">
+                    <span class="redstr">*</span <label for="">ReType CNIC / Form-B No.:</span></label>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="left">
+                    <input  class="retype" id="" name="" type="number" placeholder="Your CNIC / Form-B No. here"
+                        title="CNIC / Form-B No., Manadatory Field" value=""  />
+                </td>
+                <td align="left">
+                    <input class="retype" name="" type="number" placeholder="ReType Your CNIC / Form-B No. here"
+                        title="ReType CNIC / Form-B No., Manadatory Field" value=""  />
+                </td>
+            </tr>
+            <tr>
+                <td align="left">
+                    <span class="redstr">*</span <label for="">Name:
+                    </label>
+                </td>
+                <td align="left">
+                    <label for="stphoto">Photograph (Max. Allowed FileB):</label>
+                </td>
+            </tr>
+            <tr>
+                <td><input class="retype" id="" name="" type="text" placeholder="Your Name here" title="Name , Manadatory Field"
+                        value=""  /></td>
+                <td>
+                    <input type="file" placeholder="Choose File" style="width:64%" />
+                </td>
+            </tr>
+
+            <tr>
+                <td align="left">
+                    <span class="redstr">*</span <label for=""> Father Name:
+                    </label>
+                </td>
+                <td align="left">
+                    <span class="redstr">*</span <label for="retype">Father's CNIC
+                    (XXXXX-XXXXXXX-X):</span></label>
+                </td>
+            </tr>
+            <tr>
+                <td align="left">
+                    <input class="retype" id="" name="" type="text" placeholder="Your Father Name"
+                        title="CNIC / Form-B No., Manadatory Field" value=""  />
+                </td>
+                <td align="left">
+                    <input class="retype" name="" type="number" placeholder="Father CNIC"
+                        title="Father CNIC, Manadatory Field" value=""  />
+                </td>
+            </tr>
+            <tr>
+                <td align="left">
+                    <span class="redstr">*</span <label for="">Father/ Guardian Occupation:
+                    </label>
+                </td>
+                <td align="left">
+                    <span class="redstr">*</span <label for="retype">Family Income:</span></label>
+                </td>
+            </tr>
+            <tr>
+                <td align="left">
+                    <input class="retype" name="" type="text" placeholder="Father's Occupation"
+                        title="Father's Occupation, Manadatory Field" value=""  />
+                </td>
+                <td align="left">
+                    <input class="retype" name="" type="number" placeholder="Family Income"
+                        title="Family Income, Manadatory Field" value=""  />
+                </td>
+            </tr>
+            <tr>
+                <td align="left">
+                    <span class="redstr">*</span <label for="">Gender:
+                    </label>
+                </td>
+                <td align="left">
+                    <span class="redstr">*</span <label for="retype">Date of Birth </span></label>
+                </td>
+            </tr>
+            <tr>
+                <td align="left">
+                    <select>
+                        <option value="Male">Male </option>
+                        <option value="Female">Female</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </td>
+                <td align="left">
+                    <input class="retype" name="" type="date" placeholder="Family Income" title="DOB, Manadatory Field"
+                        value="" width="40" />
+                </td>
+            </tr>
+            <tr>
+                <td align="left">
+                    <span class="redstr">*</span <label for="">Religion:
+                    </label>
+                </td>
+                <td align="left">
+                    <span class="redstr">*</span <label for="retype">Hafiz-e-Quran </span></label>
+                </td>
+            </tr>
+            <tr>
+
+                <td align="left">
+                    <select>
+                        <option value="Islam">Islam</option>
+                        <option value="Christianity">Christianity</option>
+                        <option value="Sikhism">Sikhism</option>
+                        <option value="Chinese traditional religion">Chinese traditional religion</option>
+                        <option value="Hinduism">Hinduism</option>
+
+                    </select>
+
+                </td>
+                <td align="left">
+                    <select>
+                        <option value="" selected="selected">- - - Select - - -</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="left">
+                    <span class="redstr">*</span <label for="">Blood Group:
+                    </label>
+                </td>
+                <td align="left">
+                    <span class="redstr">*</span <label for="retype">Marital Status: </span></label>
+                </td>
+            </tr>
+            <tr>
+
+                <td align="left">
+                    <select>
+                        <option value="" selected="selected">- - - Select Blood Group - - -</option>
+                        <option value="A+ve">A+ve</option>
+                        <option value="A-ve">A-ve</option>
+                        <option value="B+ve">B+ve</option>
+                        <option value="B-ve">B-ve</option>
+                        <option value="O+ve">O+ve</option>
+                        <option value="O-ve">O-ve</option>
+                        <option value="AB+ve">AB+ve</option>
+                        <option value="AB-ve">AB-ve</option>
+
+                    </select>
+
+                </td>
+                <td align="left">
+                    <select>
+                        <option value="" selected="selected">- - - Select Marital Status - - -</option>
+                        <option value="Single">Single</option>
+                        <option value="Married">Married</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="left">
+                    <label for="">In case of Female Applicant, contact no of Father/Guardian can be entered in
+                        Mobile No. field.
+                    </label>
+                </td>
+
+            </tr>
+            <tr>
+                <td align="left">
+                    <span class="redstr">*</span <label for="">Mobile No.:
+                    </label>
+                </td>
+                <td align="left">
+                    <span class="redstr">*</span <label for="retype">Guardian Contact No.: </span></label>
+                </td>
+            </tr>
+            <tr>
+                <td align="left">
+                    <input class="retype" name="" type="number" placeholder="Mobile No." title="Mobile No., Manadatory Field"
+                        value=""  />
+                </td>
+                <td align="left">
+                    <input class="retype" name="" type="number" placeholder="Guardian Mobile No."
+                        title="Guardian Mobile No., Manadatory Field" value=""  />
+                </td>
+            </tr>
+            <tr>
+                <td align="left">
+                    <span class="redstr">*</span <label for="">Email Address:
+                    </label>
+                </td>
+                <td align="left">
+                    <span class="redstr">*</span <label for="retype">Nationality: </span></label>
+                </td>
+            </tr>
+            <tr>
+                <td align="left">
+                    <input id="" class="retype" type="email" placeholder="Email" title="Email, Manadatory Field" value=""
+                         />
+                </td>
+                <td align="left">
+                    <select name="" id="">
+                        <option value="1-Pakistan">Pakistan</option>
+                        <option value="2-Bangladesh">Bangladesh</option>
+                        <option value="3-UK">UK</option>
+                        <option value="4-UAE">UAE</option>
+                        <option value="5-SriLinka">SriLinka</option>
+                        <option value="6-India">India</option>
+                        <option value="7-Austrila">Austrila</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="left">
+                    <span class="redstr">*</span <label for="">Province:
+                    </label>
+                </td>
+                <td align="left">
+                    <span class="redstr">*</span <label for="retype">Domicile District: </span></label>
+                </td>
+            </tr>
+
+
+            <tr>
+
+                <td align="left">
+                    <select>
+                        <option value="" selected="selected">- - - Select Province - - -</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Islamabad Capital Territory">Islamabad Capital Territory</option>
+                        <option value="Sindh">Sindh</option>
+                        <option value="Balochistan">Balochistan</option>
+                        <option value="Khyber Pakhtunkhwa">Khyber Pakhtunkhwa</option>
+                        <option value="Gilgit Baltistan">Gilgit Baltistan</option>
+                        <option value="Federally Administered Tribal Areas">Federally Administered Tribal Areas</option>
+                        <option value="Azad Jammu and Kashmir">Azad Jammu and Kashmir</option>
+                        <option value="Foreigner">Foreigner</option>
+                    </select>
+
+                </td>
+                <td align="left">
+                    <input  class="retype" id="" name="" type="text" placeholder="District" title="District, Manadatory Field" value=""
+                         />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <label for="">Permanent Address:
+                    </label>
+                </td>
+
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <input name="" type="text" placeholder="Permanent Adddress" class="abc"
+                        title="Permanent Address, Manadatory Field" value=""  />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <label for="">Postal Address:
+                    </label>
+                </td>
+
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <input class="abc" name="" type="text" placeholder="Postal Address"
+                        title="Postal Address , Manadatory Field" value=""  />
+                </td>
+            </tr>
+
+
+            <tr class="status">
+                <td colspan="2">
+
+                    <label for="hstl">Hostel Required:<span class="redstr"></span></label>
+                    <br>
+                    <input type="checkbox" name="" id="" value="Yes">
+                    <span class="">Check this box, only if you want to avail hostel facilities</span>
+
+                    <br>
+                    <select id="hst" name="" id="">
+                        <option value="" selected="selected">- - - Select - - -</option>
+                        <option value="Yes">Yes</option>
+                    </select>
+                </td>
+            </tr>
+            <tr class="status">
+                <td colspan="6">
+                    <div class="redbld" style="width:100%;text-decoration:underline;">"On account of
+                        limited seats in the University Hostels, few newly admitted students will be <br>offered Hostel
+                        facility in Academic Year-2025.".</div>
+
+
+
+                </td>
+            </tr>
+            <tr class="status">
+                <td colspan="6" align="left">
+                    <h4 class="rdbg blinknew"><span>(Furthermore, the
+                            hostel facility will be provided only to the admitted students of Regular<br>/Morning
+                            programs
+                            subject to the availability of rooms/space as stated above.<br> Moreover, hostel allotment
+                            will
+                            be made purely on merit basis.)</span></h4>
+                </td>
+            </tr>
+
+
+            <tr class="status">
+                <td colspan="2">
+
+
+                    <input type="checkbox" name="" id="" value="Yes">
+                    <span class="">Check this box, only if you have done NCC Training.</span>
+                    <br>
+                    <label for="hstl"> NCC Training: <span class="redstr"></span></label>
+                    <br>
+                    <br>
+                    <select id="hst" name="" >
+                        <option value="" selected="selected">- - - Select - - -</option>
+                        <option value="Yes">Yes</option>
+                    </select>
+                </td>
+            </tr>
+            <tr class="status">
+                <td colspan="2">
+
+
+                    <input type="checkbox" name="" id="" value="Yes">
+                    <span class="">Check this box, only if you are already registered with University of the
+                        Punjab.</span> <br>
+                    <label for="hstl"> PU Registration No.: <span class="redstr"></span></label>
+                    <br>
+                    <br>
+                    <input class="abc" name="" type="number" placeholder="PU Registration No.:" title=" Manadatory Field"
+                        value="" />
+                </td>
+            </tr>
+            <tr class="status">
+                <td colspan="2">
+
+
+                    <input type="checkbox" name="" id="" value="Yes">
+                    <span class="">Check this box, Only if you are Special Person &amp; Fill in below
+                        details.</span>
+                    <br>
+
+                    <label for="hstl"> Issuing Authority of Disability: <span class="redstr"></span></label>
+                    <br>
+                    <br>
+                    <input class="abc" name="" type="text" placeholder="Issuing Authority of Disability:" title=" Manadatory Field"
+                        value="" />
+
+                    <br>
+                    <br>
+
+                    <label for="hstl"> Certificate Reference No.: <span class="redstr"></span></label>
+                    <br>
+                    <br>
+                    <input class="abc" name="" type="number" placeholder="Certificate Reference No..:"
+                        title=" Manadatory Field" value="" />
+
+                    <br>
+                    <br>
+
+                    <label for="hstl"> Certificate Issuance Date:: <span class="redstr"></span></label>
+                    <br>
+                    <br>
+                    <input class="abc" name="" type="date" placeholder="Certificate Issuance Date:"
+                        title=" Manadatory Field" value="" />
+
+                    <br>
+                    <br>
+
+                    <label for="hstl"> Disability Type <span class="redstr"></span></label>
+                    <br>
+                    <br>
+                    <select name="" class="abc">
+                        <option value="" selected="selected">- - - Select Disability Type - - -</option>
+                        <option value="Acid attack victims">Acid attack victims</option>
+                        <option value="Acquired brain injury">Acquired brain injury</option>
+                        <option value="Autism spectrum disorder">Autism spectrum disorder</option>
+                        <option value="Blindness">Blindness</option>
+                        <option value="Cerebral palsy">Cerebral palsy</option>
+                        <option value="Hemophilia">Hemophilia</option>
+                    </select>
+
+                    <br>
+                    <br>
+
+                    <label for="hstl">Supportive Device <span class="redstr"></span></label>
+                    <br>
+                    <br>
+                    <select name="" class="abc">
+                        <option value="" selected="selected">- - - Select Supportive Device - - -</option>
+                        <option value="Adapted Pencil Grips">Adapted Pencil Grips</option>
+                        <option value="Automatic page turner">Automatic page turner</option>
+                        <option value="Book holder">Book holder</option>
+                        <option value="Canes">Canes</option>
+                        <option value="Closed Captioning Devices">Closed Captioning Devices</option>
+                        <option value="Cognitive Device">Cognitive Device</option>
+                        <option value="Computer Software or Hardware">Computer Software or Hardware</option>
+                    </select>
+                    <br>
+
+
+                </td>
+
+            </tr>
+            <tr class="status">
+                <td colspan="2">
+
+
+                    <input type="checkbox" name="" id="" value="Yes">
+                    <span class="">Check this box, If Father Deceased &amp; Fill-in below information of Guardian.
+                        <br>
+
+                        <label for="hstl"> Guardian Name:<span class="redstr"></span></label>
+                        <br>
+                        <br>
+                        <input class="abc" name="" type="text" placeholder="Guardian Name:" title=" Manadatory Field"
+                            value="" />
+
+                        <br>
+                        <br>
+
+                        <label for="hstl"> Guardian Relationship: <span class="redstr"></span></label>
+                        <br>
+                        <br>
+                        <input class="abc" name="" type="text" placeholder="Guardian Relationship:"
+                            title=" Manadatory Field" value="" />
+
+                        <br>
+                        <br>
+
+                        <label for="hstl"> Guardian Address: <span class="redstr"></span></label>
+                        <br>
+                        <br>
+                        <input class="abc" name="" type="text" placeholder="Guardian Address:" title=" Manadatory Field"
+                            value="" />
+
+                        <br>
+                        <br>
+
+
+
+            </tr>
+            <tr class="status">
+                <td colspan="2">
+                    <input type="checkbox" name="" id="" value="Yes">
+                    <span class="">Check this box to add brief sketch of research professional work so far if any
+                        including Title of <br>Project, Name of Supervisor & Institution.</span>
+
+                    <br>
+                    <label for="redetails">Professional Research Work Details <i>(Maximum 500 Characters)</i>:<span
+                            class="redstr"></span></label>
+                    <br><br> <textarea class="abc" type="text" maxlength="1000" placeholder="Research Work Details here"
+                        title="Research Work Details, Manadatory Field"></textarea>
+            </tr>
+            <tr class="status">
+                <td colspan="2">
+                    <input type="checkbox" name="" id="" value="Yes">
+                    <span class="">Check this box, if you have any special needs, require any support or facility
+                        (State Briefly).
+                    </span>
+
+                    <br>
+                    <label for="redetails">Special Needs Details <i>(Maximum 500 Characters)</i>:<span
+                            class="redstr"></span></label>
+                    <br><br> <textarea class="abc" type="text" maxlength="1000"
+                        placeholder="Professional Research Work Details"
+                        title="Special Needs Details, Manadatory Field"></textarea>
+            </tr>
+            <tr class="status">
+                <td colspan="2">
+                    <input type="checkbox" name="" id="" value="Yes">
+                    <span class="">Check this box, if you have ever been convicted, if yes, fill in details
+                    </span>
+
+                    <br>
+                    <label for="redetails">Convicted Details <i>(Maximum 250 Characters)</i>:<span
+                            class="redstr"></span></label>
+                    <br><br> <textarea class="abc" type="text" maxlength="1000" placeholder="Convicted Details"
+                        title=">Convicted Details, Manadatory Field"></textarea>
+            </tr>
+            <tr class="status">
+                <td colspan="2">
+                    <input type="checkbox" name="" id="" value="Yes">
+                    <span class="">Check this box, if you ever admitted in any department of Punjab University, if
+                        yes, fill in below details.
+                    </span>
+
+                    <br>
+                    <label for="redetails">Admitted Department:</i>:<span class="redstr"></span></label>
+                    <br><br> <input class="abc" type="text"  placeholder="Admitted Department:"
+                        title="Admitted Department:, Manadatory Field"></input>
+                    <br>
+                    <label for="redetails">Admitted Program:</i>:<span class="redstr"></span></label>
+                    <br><br> <input class="abc" type="text"  placeholder="Admitted Program:"
+                        title="Admitted Program::, Manadatory Field"></input>
+                    <br>
+                    <label for="redetails">Admitted Session:</i>:<span class="redstr"></span></label>
+                    <br><br> <input class="abc" type="number"  placeholder="Admitted Session:"
+                        title="Admitted Session:, Manadatory Field"></input>
+                    <br>
+                    <label for="redetails">Admitted Roll No:</i>:<span class="redstr"></span></label>
+                    <br><br> <input class="abc" type="number"  placeholder="Admitted Roll No:"
+                        title="Admitted Roll No::, Manadatory Field"></input>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit">Submit</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
